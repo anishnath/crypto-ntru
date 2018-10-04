@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.8gwifi</groupId>
-	<artifactId>crypto</artifactId>
+	<artifactId>ntru</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0-FINAL</version>
 	<name>crypto Maven Webapp</name>
@@ -46,6 +46,7 @@
 			<version>4.0.1</version>
 			<scope>compile</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpmime</artifactId>
@@ -61,15 +62,7 @@
 			<version>4.5.2</version>
 		</dependency>
 
-		
 
-
-		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
-		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>2.9.4</version>
-		</dependency>
 
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -83,11 +76,7 @@
 			<version>2.4</version>
 		</dependency>
 		
-		<dependency>
-    <groupId>com.jcraft</groupId>
-    <artifactId>jsch</artifactId>
-    <version>0.1.54</version>
-</dependency>
+
 		
 <dependency>
     <groupId>net.sf.ntru</groupId>
@@ -95,11 +84,7 @@
     <version>1.2</version>
   </dependency>
 
-  <dependency>
-      <groupId>com.onelogin</groupId>
-      <artifactId>java-saml</artifactId>
-      <version>2.2.0</version>
-  </dependency>
+
 
 	</dependencies>
 	<build>
