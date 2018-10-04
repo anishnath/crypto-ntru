@@ -10,7 +10,6 @@ import java.util.UUID;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
-import crypto.Utils;
 import net.sf.ntru.encrypt.EncryptionKeyPair;
 import net.sf.ntru.encrypt.EncryptionParameters;
 import net.sf.ntru.encrypt.EncryptionPrivateKey;
@@ -19,7 +18,6 @@ import net.sf.ntru.encrypt.NtruEncrypt;
 import net.sf.ntru.sign.NtruSign;
 import net.sf.ntru.sign.SignatureKeyPair;
 import net.sf.ntru.sign.SignatureParameters;
-import pojo.ntrupojo;
 
 /**
  * @author aninath
@@ -53,7 +51,7 @@ public class NTRUSEncryptionDecryption {
 		}
 
 		
-		InputStream stream1 = new ByteArrayInputStream(crypto.Utils.decodeBASE64(s));
+		InputStream stream1 = new ByteArrayInputStream(ntru.Utils.decodeBASE64(s));
 		
 		System.out.println(new NTRUSEncryptionDecryption().encrypt(p_ntru, p_msg, stream1));
 		
@@ -67,7 +65,7 @@ public class NTRUSEncryptionDecryption {
 		String privateKey = ntrupojo.getPrivatekey();
 		String publicKey = ntrupojo.getPublickey();
 
-		byte[] pr = crypto.Utils.decodeBASE64(privateKey);
+		byte[] pr = ntru.Utils.decodeBASE64(privateKey);
 		byte[] pu = Utils.decodeBASE64(publicKey);
 
 		

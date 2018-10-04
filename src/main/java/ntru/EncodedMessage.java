@@ -1,4 +1,4 @@
-package pojo;
+package ntru;
 
 import com.google.gson.Gson;
 

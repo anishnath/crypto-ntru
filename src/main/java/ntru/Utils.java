@@ -1,4 +1,4 @@
-package crypto;
+package ntru;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

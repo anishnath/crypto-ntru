@@ -1,4 +1,4 @@
-package crypto;
+package ntru;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -13,10 +13,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.google.gson.Gson;
-
-
-import ntru.NTRUSEncryptionDecryption;
-import pojo.ntrupojo;
 
 /**
  * 
